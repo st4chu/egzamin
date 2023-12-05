@@ -1,0 +1,141 @@
+////	1.	////
+
+
+//	sort
+
+bubble sort - zamiana miejscami z wiekszym elementem do skutku
+merge sort - split tablicy w pol do czasu az nie beda 2elem. potem porownaj
+
+//	znajdywanie konkretnego elementu
+
+petla for, porownaj kazdy element po kolei 
+
+for(int i = 0; i < ciag.length; i++){
+  if(ciag[i] == target) break;...
+}
+
+to samo while
+
+int i = 0;
+while(i < ciag.length && warunek){
+  if(ciag[i] == target) warunek = false;...
+}
+
+
+//	zmienne i warunki
+
+int / double - liczby
+bool - y/n
+char - znak
+string - ciag znakow (dziala jak tablica)
+int[] - tablica int
+
+++ 		dodanie 1
++= x 	dodanie x
+--		odjecie 1
+-= x	odjecie x
+
+== 		jest rowne 
+|| 		lub warunek
+&&		i warunek
+
+% - reszta z dzielenia
+
+
+//	description
+
+nie wiem kurwa domysl sie co pisze?? ¯\_(ツ)_/¯
+
+
+//	problem
+
+idk ¯\_(ツ)_/¯
+
+
+//	class
+
+c#
+definicja klasy
+
+class nazwa{zawartosc}
+
+to tu ma juz byc wewnatrz klasy jak cos
+
+private string zmienna;		prywatna zmienna
+public string kolejna;		publiczna zmienna
+const int counter = 1;		stala zmienna
+
+konstruktor(args){
+  this.zmienna = args;...	przypisanie zmiennej
+  counter++;				zmiana stalej
+}
+
+bool funckja(args){
+  if(this.zmienna == args) return true;
+  return false;
+}
+
+etc.
+
+
+
+////	2.	////
+
+
+//	wpf
+
+textbox - input tekst
+button guzik lol
+textblock - pole z tekstem
+
+jak chodzi o nawigacje to <Frame> najlepiej imo 
+albo <TabControl> z <TabItem> w srodku
+
+
+//	xamarin
+
+stacklayout 	styrta jeden pod drugim itd
+grid 			siatka mozna zmieniac kolumny, rzedy i ich wymiary
+entry 		input tekst
+label 		pole z tekstem
+switch		przelacznik
+slider		pasek
+datepicker	wybor dnia
+
+do implementacji obrazow musisz zmienic wlasciwosci na resource albo embedded resource nwm
+ 
+nawigacja tabbed page albo chuj nwm juz serio co tu piac
+
+
+//	react
+
+odpalenie:
+npx create-react-app nazwa	robisz projekt
+cd nazwa					wchodzisz w projekt
+npm start					wlaczasz projekt
+
+props - przesylanie argumentow do elementu
+
+App.js
+<Element tekst="helo"/>
+
+Element.js
+function Element(props){...	tutaj props musi byc jak cos
+
+... <div>Tekst: {props.tekst}</div>...
+
+
+mapowanie
+
+tabela.map((x, id) => (				wypisuje kazdy element tabeli w osobnym divie
+  <div key=id>zmienna: {x}</div>
+));
+
+format json
+
+const tabela = [					tak sie robi tabele json ok?
+ {nazwa: "qwe", opis: "asd"},
+ {nazwa: "zxc", opis: "qweasd", ilosc: 7}
+];
+
+import Tabela form "./tabela";		import jsona z osobnego pliku
